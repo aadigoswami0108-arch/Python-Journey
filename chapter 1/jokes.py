@@ -1,5 +1,15 @@
 import pyjokes
+import pyttsx3
+
+a = pyjokes.get_joke()
+
+
 #(Aadi created this program hehhe)
-print("bas kar bassi")
+print("Bas Kar bassi")
 print("PRINTING JOKES.......")
-print(pyjokes.get_joke())
+print(a)
+
+
+engine = pyttsx3.init()
+engine.say(a)
+engine.runAndWait()
